@@ -1,17 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
     <title>Home</title>
 </head>
-<body>
-    <h1>Welcome to Home Page!</h1>
-    <a href="/about">Go to About</a>
 
-    <!-- to use POST request -->
-    <form action="/submit" method="POST">
-        <input type="text" name="data" placeholder="Enter some data">
-        <button type="submit">Submit</button>
-    </form>
+<body>
+    <header>
+        <h1>Welcome to the Home Page</h1>
+    </header>
+
+    <div class="container">
+        <nav>
+            <a href="/">Home</a><br>
+            <a href="/about">About</a>
+        </nav>
+
+
+        <div class="content">
+            <!-- to use POST request -->
+            <section class="form-section">
+                <h2>Submit Your Details</h2>
+                <form action="/submit" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your name">
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+
+            <!-- to show the image -->
+            <section class="image-section">
+                <h2>Sample Image</h2>
+                <img src="/images/th.jpg" alt="Sample Image" width="300" class="sample-image">
+            </section>
+           
+            <!-- to use the download button  -->
+            <section class="download-section">
+                <a href="/download">
+                    <button class="download-btn">Download Image</button>
+                </a>
+            </section>
+        </div>
+    </div>
+
 </body>
+
 </html>
