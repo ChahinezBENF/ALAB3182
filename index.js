@@ -53,11 +53,11 @@ app.use(morgan('dev')); // This will log the requests in the console
 
 //************** Part 3: Exploring Response Options **************//
 //1- use a static file 
-app.use(express.static('src'));
+app.use(express.static('public'));
 
 //2- Create a route to download the image
 app.get('/download', (req, res) => {
-    const file = `${__dirname}/src/images/th.jpg`;
+    const file = `${__dirname}/public/images/th.jpg`;
     res.download(file); 
 });
 

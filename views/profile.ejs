@@ -3,12 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/styles/style.css">
     <title>Document</title>
 </head>
-<body>
-    <h1>User Profile: <%= username %></h1>
-</body>
 
+<body>
+    
+        <header >
+            <h1>User Profile: <%= username %></h1>
+        </header>
+
+
+      <div class="container">
+        <nav>
+            <a href="/">Home</a><br>
+            <a href="/about">About</a>
+        </nav>
+
+        <section id="profile-content">
+           
+                <h2>Welcome, <%= username %>!</h2>
+                <p>Here you can manage and personalize your profile settings.</p>
+                <p>Let’s make this experience all about you!</p>
+       
+        </section>
+
+
+        <section id="activity-section">
+            <h2>Your Recent Activity</h2>
+            <p>Keep track of your recent interactions and contributions here.</p>
+            <ul>
+                <li>Activity 1: Updated profile details.</li>
+                <li>Activity 2: Liked a Valentine’s story.</li>
+                <li>Activity 3: Shared a memory.</li>
+            </ul>
+        </section>
+
+        <section id="favorites-section">
+            <h2>Your Favorites</h2>
+            <p>Discover and manage your favorite features or items:</p>
+            <ul>
+                <li>Saved Valentine’s cards.</li>
+                <li>Favorite profiles.</li>
+                <li>Most loved features.</li>
+            </ul>
+        </section>
+
+        <section id="settings-section">
+            <h2>Manage Settings</h2>
+            <p>Take control of your profile and privacy settings:</p>
+            <button>Edit Profile</button>
+            <button>Privacy Settings</button>
+        </section>
+
+       
+      </div>
+
+    <footer >
+        <p>&copy; 2025 Chahinez. All rights reserved.</p>
+    </footer>
+</body>
 
 </html>
